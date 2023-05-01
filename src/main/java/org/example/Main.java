@@ -1,19 +1,21 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import ru.netology.posts.FormDate;
+import ru.netology.posts.Post;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Post post = new Post();
+        post.birthday = new FormDate();
+        post.birthday.day = 10;
+        post.birthday.month = 11;
+        post.birthday.year = 1990;
+        post.name = "Иван";
+        post.patronymic = "Иванович";
+        post.surname = "Иванов";
+        post.phone = "+7-999-999-99-99";
+        post.passport = "7777 № 777777";
+        post.subscription = true;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
     }
 }
